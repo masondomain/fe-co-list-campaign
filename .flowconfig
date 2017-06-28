@@ -1,0 +1,13 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/fbjs/.*
+<PROJECT_ROOT>/node_modules/npmconf/test/.*
+# https://github.com/facebook/fbjs/issues/64
+.*/node_modules/fbjs.*
+.*/node_modules/config-chain/test/broken.json
+.*/node_modules/npm/test/.*
+
+[include]
+
+[libs]
+
+[options]

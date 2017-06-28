@@ -1,0 +1,18 @@
+machine:
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  node:
+    version: 6.10.0
+  ruby:
+    version: 2.3.3
+dependencies:
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+  pre:
+    - set -o nounset && printf "%s\n" $NPM_USERNAME $NPM_PASSWORD $NPM_EMAIL | npm login
+    - gem install scss_lint
+test:
+  override:
+    - yarn test

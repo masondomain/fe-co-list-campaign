@@ -1,0 +1,8 @@
+{
+  "@domain-group/generator-fe-boilerplate": {
+    "promptValues": {
+      "author": "masondomain <mason.hu@domain.com.au>",
+      "autoLoad": true
+    }
+  }
+}

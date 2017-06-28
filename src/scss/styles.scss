@@ -1,0 +1,57 @@
+@import '@domain-group/fe-brary/fe-brary';
+
+//
+// Once you're ready to write your own component,
+// delete the existing code between the `Delete me!` comments below
+//
+
+// ---- Auto-generated: Delete me! ----
+$list-campaign-code-font: monospace;
+
+.list-campaign__wrapper {
+  display: flex;
+  height: 100%;
+
+  &.is-1-column {
+    flex-direction: column;
+  }
+
+  &.is-2-column {
+    flex-direction: row;
+  }
+
+  .list-campaign__heading,
+  .list-campaign__content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-basis: 0; // Give equal width
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-campaign__heading {
+    @extend %h1-tag;
+    background-color: $fe-brary-colour-secondary;
+    color: $fe-brary-colour-white;
+    text-align: center;
+  }
+
+  .list-campaign__sub-heading {
+    @extend %h3-tag;
+  }
+
+  .list-campaign__code {
+    font-family: $list-campaign-code-font;
+  }
+
+  .list-campaign__todo {
+    list-style: circle inside;
+    margin-left: 1em;
+  }
+
+  .list-campaign__link {
+    @extend %a-tag;
+  }
+}
+// ---- [end] Auto-generated: Delete me! ----
